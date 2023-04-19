@@ -8,6 +8,20 @@ const convert = document.getElementById("convert");
 const encTextBox = document.getElementById("encTextBox");
 const decTextBox = document.getElementById("decTextBox");
 
+const root = document.documentElement;
+
+// Change link color every 0.1 second
+let hua = Math.floor(Math.random() * 358);
+function changeColor(){
+    setInterval(() => {
+        root.style.setProperty("--hua", hua + "deg");
+
+        hua += 3;
+        if (hua > 358){
+            hua = 0;
+        }
+    }, 100);
+}
 
 /*
 Fucntions to Convert
@@ -266,3 +280,6 @@ decTextBox.addEventListener("input", () => {
     }
 })
 
+
+// Change title color
+changeColor();
