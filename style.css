@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #86c2ff;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    margin-block: 1.5rem;
+}
+
+header h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: .2rem;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header p{
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 60%; */
+    margin-inline: auto;
+}
+
+.optionBoard{
+    margin-block: 1rem;
+    width: calc(395px + 1rem + 395px);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: .8rem;
+    font-size: 1.3rem;
+    color: blue;
+}
+
+.option{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+@media (width < 560px){
+    .optionBoard{
+        width: auto;
+    }
+}
+
+.optionBoard select, .optionBoard button{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px;
+    outline: none;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.optionBoard select:hover, .optionBoard button:hover, label:hover{
+    cursor: pointer;
+}
+
+.optionBoard button{
+    width: 105px;
+    padding: 8px 1rem;
+    margin-left: 5px;
+}
+
+.optionBoard button:active{
+    border-color: dodgerblue;
+    color: dodgerblue;
+}
+
+.decryptBoard{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-inline: 10px;
+}
+
+.decryptBoard textarea{
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    border: 3px solid gray;
+}
+
+.decryptBoard textarea:focus{
+    border-color: dodgerblue;
+}
+
+@media (width < 870px){
+    .optionBoard{
+        width: 60%;
+    }
+    .decryptBoard textarea{
+        height: 140px;
+        width: 60%;
+    }
+}
+
+.copyright{
+    font-size: .85rem;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-block: 8px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Number System Converter</title>
+</head>
+<body>
+    <header>
+        <h1><a href="https://github.com/TheProjectsX">The Projects X</a></h1>
+        <p>Let's Build Something NEW!</p>
+    </header>
+    <div class="container">
+        <div class="optionBoard">
+            <div class="option">
+            <select name="decFrom" id="decFrom">
+                <option value="Binary">Binary</option>
+                <option value="Decimal">Decimal</option>
+                <option value="Hex">Hex</option>
+                <option value="Octal">Octal</option>
+            </select>
+            <p>To</p>
+            <select name="decTo" id="decTo">
+                <option value="Binary">Binary</option>
+                <option value="Decimal" selected>Decimal</option>
+                <option value="Hex">Hex</option>
+                <option value="Octal">Octal</option>
+            </select>
+        </div>
+        <div class="option">
+            
+            <label for="autoUpdate"><input type="checkbox" name="autoUpdate" id="autoUpdate" checked> Auto Update</label>
+            <button id="convert">Convert</button>
+        </div>
+        </div>
+        <div class="decryptBoard">
+            <textarea name="encTextBox" id="encTextBox" cols="42" rows="15" placeholder="Enter your Encrypted Text"></textarea>
+            <textarea name="decTextBox" id="decTextBox" cols="42" rows="15" placeholder="Decrypted Text will Appear Here"></textarea>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">Copyright &copy; Modasser Hasan. All rights Reserved</p>
+    </footer>
+
+</body>
+</html>
