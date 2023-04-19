@@ -1,3 +1,8 @@
+:root{
+    --hua: 64deg;
+    --saturation: 100%;
+    --lightness: 50%;
+}
 *{
     margin: 0;
     padding: 0;
@@ -36,6 +41,12 @@ header p{
     align-items: center;
     /* width: 60%; */
     margin-inline: auto;
+}
+
+.title {
+    font-size: 2rem;
+    color: hsl(var(--hua) var(--saturation) var(--lightness));
+    margin-bottom: 10px;
 }
 
 .optionBoard{
