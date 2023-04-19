@@ -44,6 +44,7 @@ header p{
 }
 
 .title {
+    text-align: center;
     font-size: 2rem;
     color: hsl(var(--hua) var(--saturation) var(--lightness));
     margin-bottom: 10px;
@@ -130,12 +131,17 @@ header p{
 
 .copyright{
     font-size: .85rem;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
     text-align: center;
     background-color: black;
     color: white;
     text-align: center;
     padding-block: 8px;
+}
+
+@media (width > 740px){
+    .copyright{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
 }
